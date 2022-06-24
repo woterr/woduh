@@ -1,13 +1,10 @@
-
-import AOS from "aos"
 import Navbar from "./nav";
 import projects from "./Data/projects.json";
-import { useState } from "react";
-
-AOS.init()
+import { useState, useEffect } from "react";
 
 function App() {
   const [dropdownActive, setDropdownActive] = useState(true);
+
   return (
     <div>
       <Navbar />

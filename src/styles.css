@@ -350,6 +350,8 @@ img {
   gap: 1rem;
   top: 0;
   left: 0;
+  -webkit-animation: compAnim 5s ease infinite;
+  animation: compAnim 5s ease infinite;
 }
 
 .element-profile-img {
@@ -398,6 +400,8 @@ img {
   position: absolute;
   box-shadow: 0 8px 30px -2px rgba(0, 0, 0, 0.127);
   transition: all 0.25s ease;
+  -webkit-animation: compAnim 8s ease infinite;
+  animation: compAnim 8s ease infinite;
 }
 
 .element-list-item {
@@ -457,6 +461,7 @@ img {
   border-radius: 1rem;
   padding: 1.5rem;
   transition: all 0.25s ease;
+  animation: compAnim 9s ease infinite reverse;
 }
 
 .element-logo img {
@@ -477,6 +482,8 @@ img {
   font-size: var(--small-font-size);
   user-select: none;
   position: relative;
+  -webkit-animation: compAnim 15s ease infinite;
+  animation: compAnim 15s ease infinite;
 }
 
 .element-dropdown-btn {
@@ -502,6 +509,8 @@ img {
   padding: 4px 15px;
   box-shadow: 0 15px 30px -8px rgb(0 0 0 / 8%);
   border-radius: 0.75rem;
+  -webkit-animation: compAnim 7s ease infinite;
+  animation: compAnim 7s ease infinite;
 }
 
 .element-dropdown-item {
@@ -546,6 +555,8 @@ img {
   box-shadow: 0 8px 30px -2px rgba(0, 0, 0, 0.127);
   transition: all 0.25s ease;
   z-index: 200;
+  -webkit-animation: compAnim 20s ease infinite;
+  animation: compAnim 20s ease infinite;
 }
 
 .element-load-loader {
@@ -581,6 +592,8 @@ img {
   top: 425px;
   left: 350px;
   transition: all 0.25s ease;
+  -webkit-animation: compAnim 10s ease infinite;
+  animation: compAnim 10s ease infinite;
 }
 
 .element-text-inp-wrap {
@@ -653,5 +666,17 @@ img {
 @media screen and (max-width: 624px) {
   .container-elements.home {
     display: none;
+  }
+}
+
+@keyframes compAnim {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  0% {
+    transform: translateY(0);
   }
 }
