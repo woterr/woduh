@@ -1,22 +1,44 @@
 [
   {
-    "title": "Shining Live - UI Design",
-    "img": "./Designs/one.png",
-    "link": "/"
+    "title": "Staque",
+    "description": "The ideal Discord bot for managing tickets on and around your server.",
+    "url": "https://staque.vercel.app",
+    "githubLink": "https://github.com/woterr/staque",
+    "tagA": "DiscordJS",
+    "tagB": "NodeJS",
+    "tagC": "MongoDB"
   },
   {
-    "title": "Shining Live - UI Design",
-    "img": "./Designs/one.png",
-    "link": "/"
+    "title": "Sarc",
+    "description": "A personal portfolio for a community manager and community builder from California.",
+    "url": "https://sarc.xyz/",
+    "tagA": "Python",
+    "tagB": "SMTP",
+    "tagC": "MongoDB"
   },
   {
-    "title": "Shining Live - UI Design",
-    "img": "./Designs/one.png",
-    "link": "/"
+    "title": "Basic web server",
+    "description": "A web server template. ",
+    "url": "https://sarc.xyz/",
+    "tagA": "NodeJS",
+    "tagB": "ExpressJS"
   },
   {
-    "title": "Shining Live - UI Design",
-    "img": "./Designs/one.png",
-    "link": "/"
+    "title": "Coloriffy",
+    "description": "A basic color palette generator with premade palettes.",
+    "url": "https://coloriffy.netlify.app/",
+    "githubLink": "https://github.com/woterr/colorify",
+    "tagA": "HTML",
+    "tagB": "CSS",
+    "tagC": "JS"
+  },
+  {
+    "title": "Notesy",
+    "description": "A web application which lets you create notes and saves them in local storage.",
+    "url": "https://notesyy.netlify.app/",
+    "githubLink": "https://github.com/woterr/Notesy",
+    "tagA": "HTML",
+    "tagB": "JS",
+    "tagC": "Local storage"
   }
 ]

@@ -1,6 +1,6 @@
 import Navbar from "./nav";
 import projects from "./Data/projects.json";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 function App() {
   const [dropdownActive, setDropdownActive] = useState(true);
@@ -56,7 +56,7 @@ function App() {
                       checked
                     ></input>
                     <span className="element-checkmark">
-                      <i class="bx bx-check"></i>
+                      <i className="bx bx-check"></i>
                     </span>
                   </div>
                   <span>United Kingdom</span>
@@ -65,7 +65,7 @@ function App() {
                   <div className="element-checkbox-wrap">
                     <input type="checkbox" className="element-checkbox"></input>
                     <span className="element-checkmark">
-                      <i class="bx bx-check"></i>
+                      <i className="bx bx-check"></i>
                     </span>
                   </div>
                   <span>Singapore</span>
@@ -74,7 +74,7 @@ function App() {
                   <div className="element-checkbox-wrap">
                     <input type="checkbox" className="element-checkbox"></input>
                     <span className="element-checkmark">
-                      <i class="bx bx-check"></i>
+                      <i className="bx bx-check"></i>
                     </span>
                   </div>
                   <span>Germany</span>
@@ -83,7 +83,7 @@ function App() {
                   <div className="element-checkbox-wrap">
                     <input type="checkbox" className="element-checkbox"></input>
                     <span className="element-checkmark">
-                      <i class="bx bx-check"></i>
+                      <i className="bx bx-check"></i>
                     </span>
                   </div>
                   <span>France</span>
@@ -132,15 +132,63 @@ function App() {
                 </label>
               </div>
               <div className="element-text-btn">
-                <i class="bx bx-search-alt-2"></i>
+                <i className="bx bx-search-alt-2"></i>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="section">
+      <section className="section projects">
         <div className="container">
-          <div className="container projects"></div>
+          <div className="container projects">
+            <h1 className="title fancy">Noteworthy projects</h1>
+            <ul className="projects-grid">
+              {projects.map((e) => (
+                <li className="projects-item">
+                  <div className="project-inner">
+                    <header>
+                      <div className="project-top">
+                        <div className="folder">
+                          <i class="bx bx-folder"></i>
+                        </div>
+                        <div className="project-links">
+                          {e.githubLink && (
+                            <a href={e.githubLink}>
+                              <i class="bx bxl-github"></i>
+                            </a>
+                          )}
+                          {e.url && (
+                            <a href={e.url}>
+                              <i class="bx bx-link"></i>
+                            </a>
+                          )}
+                        </div>
+                      </div>
+                      <h3 className="project-title">
+                        <a
+                          href={e.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {e.title}
+                        </a>
+                      </h3>
+                      <div className="project-description">
+                        <p>{e.description}</p>
+                      </div>
+                    </header>
+                    <footer>
+                      <ul className="project-tech-list">
+                        {e.tagA && <li>{e.tagA}</li>}
+                        {e.tagB && <li>{e.tagB}</li>}
+                        {e.tagC && <li>{e.tagC}</li>}
+                      </ul>
+                    </footer>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
     </div>
