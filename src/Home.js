@@ -149,7 +149,8 @@ function App() {
                     <header>
                       <div className="project-top">
                         <div className="folder">
-                          <i class="bx bx-folder"></i>
+                          {e.type === "website" && <i class="bx bx-world"></i>}
+                          {e.type === "folder" && <i class="bx bx-folder"></i>}
                         </div>
                         <div className="project-links">
                           {e.githubLink && (

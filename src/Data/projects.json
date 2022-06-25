@@ -6,7 +6,8 @@
     "githubLink": "https://github.com/woterr/staque",
     "tagA": "DiscordJS",
     "tagB": "NodeJS",
-    "tagC": "MongoDB"
+    "tagC": "MongoDB",
+    "type": "folder"
   },
   {
     "title": "Sarc",
@@ -14,14 +15,16 @@
     "url": "https://sarc.xyz/",
     "tagA": "Python",
     "tagB": "SMTP",
-    "tagC": "MongoDB"
+    "tagC": "MongoDB",
+    "type": "website"
   },
   {
     "title": "Basic web server",
     "description": "A web server template. ",
     "url": "https://github.com/woterr/Basic-web-server-localhost",
     "tagA": "NodeJS",
-    "tagB": "ExpressJS"
+    "tagB": "ExpressJS",
+    "type": "folder"
   },
   {
     "title": "Coloriffy",
@@ -30,7 +33,8 @@
     "githubLink": "https://github.com/woterr/colorify",
     "tagA": "HTML",
     "tagB": "CSS",
-    "tagC": "JS"
+    "tagC": "JS",
+    "type": "website"
   },
   {
     "title": "Notesy",
@@ -39,6 +43,7 @@
     "githubLink": "https://github.com/woterr/Notesy",
     "tagA": "HTML",
     "tagB": "JS",
-    "tagC": "Local storage"
+    "tagC": "Local storage",
+    "type": "website"
   }
 ]

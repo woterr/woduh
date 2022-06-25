@@ -619,15 +619,16 @@ img {
 .element-text-label {
   position: absolute;
   left: 15px;
-  top: 2px;
+  top: 4px;
   color: var(--text-color-light);
   transform: translateX(0);
   opacity: 1;
   transition: all 0.3s;
+  cursor: text;
 }
 
 .element-text-inp:not(:placeholder-shown) + .element-text-label {
-  transform: translateX(5px);
+  transform: translateX(6px);
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s;
@@ -694,13 +695,19 @@ img {
   list-style: none;
   padding: 0px;
   margin: 50px 0px 0px;
-  gap: 15px;
+  gap: 1.25rem;
   position: relative;
 }
 
 .projects-item {
   background: var(--container-color);
   border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+.projects-item:hover {
+  transform: translateY(-7.5px);
+  transition: all 0.3s ease;
 }
 
 .project-inner {
