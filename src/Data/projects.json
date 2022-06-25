@@ -19,7 +19,7 @@
   {
     "title": "Basic web server",
     "description": "A web server template. ",
-    "url": "https://sarc.xyz/",
+    "url": "https://github.com/woterr/Basic-web-server-localhost",
     "tagA": "NodeJS",
     "tagB": "ExpressJS"
   },
