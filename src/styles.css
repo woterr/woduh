@@ -145,12 +145,6 @@ img {
   gap: 0.5rem;
 }
 
-.nav-logo img {
-  width: 2rem;
-  object-fit: cover;
-  border-radius: 4rem;
-}
-
 .nav-list {
   display: flex;
   gap: 3rem;
@@ -438,6 +432,15 @@ img {
 .hero-img-div:nth-of-type(6) img {
   -webkit-filter: drop-shadow(0 20px 30px #00000066);
   filter: drop-shadow(0 20px 30px #00000066);
+  transition: all 0.3s;
+  z-index: 6;
+}
+
+.hero-img-div:nth-of-type(6) img:hover {
+  transition: all 0.3s;
+  transform: translateY(-5px);
+  -webkit-filter: drop-shadow(0 20px 45px #0000009d);
+  filter: drop-shadow(0 20px 45px #0000009d);
 }
 
 .hero-img-div:nth-of-type(6) img ~ span {
