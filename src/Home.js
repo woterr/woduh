@@ -1,11 +1,9 @@
-import Navbar from "./nav";
 import { useState } from "react";
 import projects from "./Data/projects.json";
 
 function App() {
   return (
     <div>
-      <Navbar />
       <section className="section">
         <div className="container hero">
           <div className="hero-img">

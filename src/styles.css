@@ -15,8 +15,8 @@
   --secondary-color-alt: #0f2238;
   --secondary-color-rgb: 9, 24, 41;
   --button-color: #265a4e;
-  --text-color: #152231;
-  --text-color-light: #1b2c3f;
+  --text-color: #1b2635;
+  --text-color-light: #243144;
   --title-color: #09131f;
 
   --biggest-font-size: 2.75rem;
@@ -104,7 +104,7 @@ img {
 
 @media screen and (max-width: 391px) {
   .container {
-    padding: 0.25rem;
+    padding: 0.5rem;
   }
 }
 
@@ -122,6 +122,7 @@ img {
 
 .header.active {
   background: var(--container-color);
+  border-bottom: 1px solid var(--secondary-color);
   transition: all 0.3s;
 }
 
@@ -579,5 +580,94 @@ ul.hero-container-data {
   .title.fancy {
     align-items: center;
     text-align: center;
+  }
+}
+
+.footer {
+  background: var(--container-color);
+  margin-top: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.footer .container {
+  display: grid;
+  row-gap: 2.5rem;
+}
+
+.footer-logo {
+  color: var(--secondary-color);
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  display: inline-flex;
+  font-weight: var(--font-semi-bold);
+}
+
+.footer-description {
+  max-width: 22rem;
+}
+
+.footer-description,
+.footer-links li {
+  font-size: var(--small-font-size);
+  font-weight: normal;
+}
+
+.footer-content,
+.footer-links {
+  display: grid;
+}
+
+.footer-content {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem 4rem;
+}
+
+.footer-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  row-gap: 0.5rem;
+}
+
+.footer-links li a {
+  color: var(--text-color);
+  transition: 0.3s;
+}
+
+.footer-links li a:hover {
+  color: var(--title-color);
+  transition: 0.3s;
+}
+
+.footer-social {
+  display: flex;
+  column-gap: 1rem;
+}
+
+.footer-social-link {
+  font-size: 1.25rem;
+  color: var(--text-color);
+  transition: 0.3s;
+}
+
+.footer-social-link:hover {
+  color: var(--title-color);
+}
+
+@media screen and (min-width: 767px) {
+  .footer .container {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-between;
+  }
+
+  .footer-title {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-links {
+    row-gap: 1rem;
   }
 }
