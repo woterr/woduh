@@ -22,7 +22,7 @@ export default function Nav() {
     >
       <nav className="nav container">
         <div className="nav-logo">
-          <a href="/">Woduh</a>
+          <a href="/">Woter</a>
         </div>
 
         <div className={openNav ? "nav-menu active" : "nav-menu"}>

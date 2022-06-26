@@ -4,7 +4,7 @@ export default function Nav() {
       <div className="container">
         <div>
           <a href="/" className="footer-logo">
-            Woduh
+            Woter
           </a>
           <p className="footer-description">
             I'm a front-end web developer who loves creating flawless web
