@@ -6,13 +6,31 @@ function App() {
     <div>
       <section className="section">
         <div className="container hero">
-          <div className="hero-img">
-            <img src="./hero-img.png" alt="" className="hero-img-pc" />
+          <div className="hero-img-wrap">
+            <div className="hero-img">
+              {/* <img src="./hero-img.png" alt="" className="hero-img-pc" />
             <img
               src="./hero-img-mobile.png"
               alt=""
               className="hero-img-mobile"
-            />
+            /> */}
+              <div className="hero-img-div"></div>
+              <div className="hero-img-div"></div>
+              <div className="hero-img-div"></div>
+              <div className="hero-img-div">
+                WEB <br /> DEV
+              </div>
+              <div className="hero-img-div">
+                Bring your ideas <br /> to reality
+              </div>
+              <div className="hero-img-div">
+                <img src="./fancy-ball.png" alt="profile" />
+                <span>
+                  WEB DESIGNER <br /> UI/UX DESIGNER
+                </span>
+              </div>
+              <div className="hero-img-div"></div>
+            </div>
           </div>
           <div className="container-data hero">
             <h1 className="title">
