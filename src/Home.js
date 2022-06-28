@@ -73,7 +73,7 @@ function App() {
       <section className="section projects">
         <div className="container">
           <div className="container projects">
-            <h1 className="title fancy">Note-worthy projects</h1>
+            <h1 className="title fancy">Noteworthy projects</h1>
             <ul className="projects-grid">
               {projects.map((e) => (
                 <li className="projects-item">
