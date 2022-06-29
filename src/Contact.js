@@ -1,13 +1,8 @@
 import Navbar from "./nav";
-import { useState } from "react";
+import { useEffect } from "react";
 
 function App() {
-  return (
-    <div>
-      <Navbar />
-      Contact
-    </div>
-  );
+  return <div>Contact</div>;
 }
 
 export default App;

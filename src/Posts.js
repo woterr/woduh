@@ -1,12 +1,7 @@
 import Navbar from "./nav";
 
 function App() {
-  return (
-    <div>
-      <Navbar />
-      Posts
-    </div>
-  );
+  return <div>Posts</div>;
 }
 
 export default App;
